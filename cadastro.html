@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastro - pokehub</title>
+    <!-- mesma fonte que usei no login e no index -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/cadastro.css" href="css/estilo.css">
+</head>
+<body class="pagecadastro">
+
+<div class="containercadastro">
+
+    <h1 class="titulocadastro">POKEHUB</h1>
+    <p class="subtitulo">crie sua conta de treinador</p>
+
+    <!-- avatar que vai mudando quando clicar -->
+    <div class="secao-avatar-atual">
+        <div class="avatar-wrapper">
+            <img id="avatar-atual" src="https://play.pokemonshowdown.com/sprites/trainers/red.png" alt="Avatar Atual">
+        </div>
+        <!-- mostra o nome do avatar selecionado -->
+        <p id="nome-avatar-selecionado">Red</p>
+    </div>
+
+    <!-- formulario de cadastro -->
+    <form action="lobby.html" method="get" id="form-cadastro">
+
+        <p class="label-campo">Nome Completo:</p>
+        <input class="campo" type="text" name="nome" placeholder="ex: Ash Ketchum" required>
+        <br><br>
+
+        <p class="label-campo">Nome de Treinador:</p>
+        <input class="campo" type="text" name="usuario" id="usuario" placeholder="ex: treinador123" required>
+        <br><br>
+
+        <p class="label-campo">E-mail:</p>
+        <input class="campo" type="email" name="email" placeholder="ex: ash@pokemon.com" required>
+        <br><br>
+
+        <p class="label-campo">Senha:</p>
+        <input class="campo" type="password" name="senha" placeholder="minimo 6 caracteres" required>
+        <br><br>
+
+        <p class="label-campo">Confirmar Senha:</p>
+        <input class="campo" type="password" name="confirmar" placeholder="repita a senha" required>
+        <br><br>
+
+        <!-- grade de avatares igual a da pagina editar.html -->
+        <h2 class="titulo-grade">Escolha seu Avatar</h2>
+
+        <div class="grade-avatares">
+            <img class="opcao-avatar" src="https://play.pokemonshowdown.com/sprites/trainers/red.png" alt="Red">
+            <img class="opcao-avatar" src="https://play.pokemonshowdown.com/sprites/trainers/ethan.png" alt="Ethan">
+            <img class="opcao-avatar" src="https://play.pokemonshowdown.com/sprites/trainers/brendan.png" alt="Brendan">
+            <img class="opcao-avatar" src="https://play.pokemonshowdown.com/sprites/trainers/lucas.png" alt="Lucas">
+            <img class="opcao-avatar" src="https://play.pokemonshowdown.com/sprites/trainers/hilbert.png" alt="Hilbert">
+            <img class="opcao-avatar" src="https://play.pokemonshowdown.com/sprites/trainers/nate.png" alt="Nate">
+            <img class="opcao-avatar" src="https://play.pokemonshowdown.com/sprites/trainers/lyra.png" alt="Lyra">
+            <img class="opcao-avatar" src="https://play.pokemonshowdown.com/sprites/trainers/may.png" alt="May">
+            <img class="opcao-avatar" src="https://play.pokemonshowdown.com/sprites/trainers/dawn.png" alt="Dawn">
+            <img class="opcao-avatar" src="https://play.pokemonshowdown.com/sprites/trainers/lance.png" alt="Lance">
+            <img class="opcao-avatar" src="https://play.pokemonshowdown.com/sprites/trainers/steven.png" alt="Steven">
+            <img class="opcao-avatar" src="https://play.pokemonshowdown.com/sprites/trainers/cynthia.png" alt="Cynthia">
+        </div>
+        <br>
+
+        <input type="submit" class="botao-cadastrar" value="CRIAR CONTA DE TREINADOR">
+
+    </form>
+
+    <br>
+    <p class="texto-rodape">ja tem conta? <a href="index.html" class="link-login">fazer login</a></p>
+
+</div>
+
+<!-- script pra trocar o avatar quando clicar -->
+<script src="js/cadastro.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,227 @@
+/* css da pagina de cadastro */
+/* quase igual ao login.css mas mudei algumas coisas */
+/* trabalho de laboratorio de desenvolvimento web - 1 semestre ADS */
+
+/* fundo igual ao resto do site */
+body {
+    background-color: rgb(106, 108, 233);
+    font-family: 'Orbitron', '-apple-system', BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* fundo igual ao resto do site */
+.pagecadastro {
+    background-color: rgb(106, 108, 233);
+    font-family: 'Orbitron', sans-serif;
+    min-height: 100vh;
+    padding: 30px 16px;
+}
+
+/* caixa principal - copiei do containereditar e ajustei */
+.containercadastro {
+    background-color: #1a1a2e;
+    border: 3px solid #ffcc00;
+    border-radius: 20px;
+    padding: 30px;
+    width: 100%;
+    max-width: 450px;
+    /* isso centraliza a caixa na tela */
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+/* titulo pokehub */
+.titulocadastro {
+    font-family: 'Press Start 2P', sans-serif;
+    color: #ffcc00;
+    text-shadow: 3px 3px 0px #3B4CCA;
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.subtitulo {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 11px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+/* parte do avatar atual - igual ao editar.css */
+.secao-avatar-atual {
+    margin-bottom: 20px;
+}
+
+.avatar-wrapper {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 8px auto;
+    background-color: #162447;
+    border: 3px solid #ffcc00;
+    border-radius: 50%;
+    /* usei flex pra centralizar a imagem dentro do circulo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.avatar-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* isso deixa a imagem pixelada igual sprite de pokemon */
+    image-rendering: pixelated;
+}
+
+/* nome do avatar selecionado embaixo do circulo */
+#nome-avatar-selecionado {
+    color: #ffcc00;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* labels dos campos do formulario */
+.label-campo {
+    color: #ffcc00;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+/* campos de texto */
+.campo {
+    width: 100%;
+    padding: 12px;
+    background-color: #162447;
+    border: 2px solid #2a5298;
+    border-radius: 8px;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 13px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+/* quando clica no campo muda a borda igual no editar.css */
+.campo:focus {
+    border-color: #ffcc00;
+}
+
+/* titulo da grade de avatares */
+.titulo-grade {
+    color: white;
+    font-size: 13px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+/* grade de avatares - copiei direto do editar.css */
+.grade-avatares {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    background-color: #162447;
+    padding: 15px;
+    border-radius: 12px;
+    max-height: 200px;
+    overflow-y: auto;
+    border: 2px solid #2a5298;
+}
+
+/* cada avatar na grade */
+.opcao-avatar {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: contain;
+    image-rendering: pixelated;
+    cursor: pointer;
+    background-color: #1a1a2e;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    padding: 4px;
+    transition: all 0.2s ease;
+}
+
+.opcao-avatar:hover {
+    background-color: #2a5298;
+    border-color: #ffcc00;
+    transform: scale(1.1);
+}
+
+/* classe que coloco via js quando o avatar esta selecionado */
+.opcao-avatar.selecionado {
+    border-color: #ffcc00;
+    background-color: #2a5298;
+}
+
+/* scrollbar da grade - igual ao editar.css */
+.grade-avatares::-webkit-scrollbar {
+    width: 6px;
+}
+
+.grade-avatares::-webkit-scrollbar-thumb {
+    background-color: #ffcc00;
+    border-radius: 4px;
+}
+
+.grade-avatares::-webkit-scrollbar-track {
+    background-color: #162447;
+}
+
+/* botao de cadastrar - usei o estilo do botao-voltar do editar.css */
+.botao-cadastrar {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #ffcc00, #ff9900);
+    border: none;
+    border-radius: 10px;
+    color: black;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.botao-cadastrar:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.botao-cadastrar:active {
+    transform: translateY(1px);
+}
+
+/* texto e link do rodape */
+.texto-rodape {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 11px;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+
+.link-login {
+    color: #ffcc00;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.link-login:hover {
+    color: white;
+}

@@ -1,0 +1,243 @@
+.page {
+    background-color: rgb(106, 108, 233);
+}
+
+.POKEHUB {
+   font-family: 'Press Start 2P', system-ui;
+    color: #FFCC00; 
+    text-shadow: 3px 3px 0px #3B4CCA; 
+    text-align: center;
+    font-size: 40px;
+}
+
+
+/*Alinhamento de botoes iguais */
+
+.menu {
+    display: flex;
+    flex-direction: column;   /* Empilha os botões um embaixo do outro */
+    align-items: center;      /* Centraliza os botões horizontalmente na tela */
+    justify-content: center;  /* Centraliza no eixo vertical, se necessário */
+    width: 100%;              /* Ocupa toda a largura da tela para poder centralizar */
+    margin-top: 20px;         /* Espaço entre o título POKEHUB e o primeiro botão */
+}
+
+
+
+
+/* alinhando os links */
+.botaoum, .botaodois, .botaotres, .botaoquatro, .botaocinco, .botaoseis {
+    display: block;           
+    text-decoration: none;    
+    text-align: center;       
+    
+    
+}
+
+
+/* Primeiro botao */
+.botaoum{
+    /*mudando a fonte*/
+    font-family: 'Orbitron', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;                 
+    text-transform: uppercase;  
+
+/* centralizacao do texto */
+    width: 80%;                 
+    max-width: 300px;           
+    padding: 16px 20px;         /* Espaçamento interno */
+    margin: 8px 0;          /* Margem para separar um botão do outro */
+
+/* Mudando as cores */
+    background: linear-gradient(135deg, #eb120b, #f3f4f7); 
+    border: none;              
+    border-radius: 12px;  
+    cursor: pointer;      
+}
+
+/* botao dois */
+.botaodois {
+    /*mudando a fonte*/
+    font-family: 'Orbitron', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;                   
+    text-transform: uppercase;  
+    
+    /* centralizacao do texto */
+    width: 80%;                 
+    max-width: 300px;           
+    padding: 16px 20px;         /* Espaçamento interno */
+    margin: 8px 0;          /* Margem para separar um botão do outro */
+    
+    
+    /* Mudando as cores */
+    background: linear-gradient(135deg,  #0050fc, rgb(255, 255, 255));
+    border: none;              
+    border-radius: 12px;   
+    cursor: pointer;     
+}
+
+/* botao tres */
+.botaotres {
+    /*mudando a fonte*/
+    font-family: 'Orbitron', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;                    
+    text-transform: uppercase;  
+
+/* centralizacao do texto */
+    width: 80%;                 
+    max-width: 300px;           
+    padding: 16px 20px;         /* Espaçamento interno */
+    margin: 8px 0;          /* Margem para separar um botão do outro */
+
+/* Mudando as cores */
+    background: linear-gradient(135deg,  #e102ff, rgb(0, 0, 0)); 
+    border: none;              
+    border-radius: 12px;   
+    cursor: pointer;     
+}
+
+/* botao 4 */
+.botaoquatro {
+        /*mudando a fonte*/
+    font-family: 'Orbitron', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;                    
+    text-transform: uppercase;  
+
+/* centralizacao do texto */
+    width: 80%;                 
+    max-width: 300px;           
+    padding: 16px 20px;         /* Espaçamento interno */
+    margin: 8px 0;          /* Margem para separar um botão do outro */
+
+/* Mudando as cores */
+    background: linear-gradient(135deg,  #f0cc00, rgb(0, 0, 0)); 
+    border: none;              
+    border-radius: 12px;   
+    cursor: pointer;   
+}
+
+
+.botaocinco {
+    /*mudando a fonte*/
+    font-family: 'Orbitron', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;                    
+    text-transform: uppercase;  
+
+/* centralizacao do texto */
+    width: 80%;                 
+    max-width: 300px;           
+    padding: 16px 20px;         /* Espaçamento interno */
+    margin: 8px 0;          /* Margem para separar um botão do outro */
+
+/* Mudando as cores */
+    background: linear-gradient(135deg,  #018823, rgb(0, 0, 0)); 
+    border: none;              
+    border-radius: 12px;   
+    cursor: pointer;   
+}
+
+.botaoseis {
+    /*mudando a fonte*/
+    font-family: 'Orbitron', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #000000;                    
+    text-transform: uppercase;  
+
+/* centralizacao do texto */
+    width: 80%;                 
+    max-width: 300px;           
+    padding: 16px 20px;         /* Espaçamento interno */
+    margin: 8px 0;          /* Margem para separar um botão do outro */
+
+/* Mudando as cores */
+    background: linear-gradient(135deg,  #474747, rgb(90, 90, 90)); 
+    border: none;              
+    border-radius: 12px;   
+    cursor: pointer;   
+}
+
+
+/* parte do avatar */
+/* Estilização do Avatar no Lobby */
+.container-avatar-lobby {
+    display: flex;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+#avatar-lobby {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    image-rendering: pixelated;
+     background-color: rgb(59, 62, 247); 
+    border: 2px solid #FFCC00;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+/* Estilização do Avatar e Nick no Lobby */
+.container-avatar-lobby {
+    display: flex;
+    flex-direction: column;   /* Empilha o avatar e o nick */
+    align-items: center;      /* Centraliza horizontalmente */
+    justify-content: center;
+    margin: 15px 0;
+    gap: 10px;                /* Espaço entre a foto e o texto */
+}
+
+#avatar-lobby {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    image-rendering: pixelated; 
+    background-color: rgba(22, 36, 71, 0.6); 
+    border: 2px solid #FFCC00;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+/* Novo: Estilo do Nick no Lobby */
+#nick-lobby {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-shadow: 2px 2px 0px #000000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.botao-sair {
+    display: block;           
+    text-decoration: none;    
+    text-align: center;       
+    font-family: 'Orbitron', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    width: 80%;
+    max-width: 300px;
+    padding: 16px 20px;
+    margin: 25px 0 8px 0; /* Um espaçamento extra no topo para separar dos outros */
+    
+    /* Um gradiente vermelho escuro/preto para indicar saída */
+    background: linear-gradient(135deg, #8b0000, #111111);
+    border: 2px solid #ffcc00;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+
