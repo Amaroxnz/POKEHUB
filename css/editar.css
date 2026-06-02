@@ -1,0 +1,171 @@
+/*  CONFIGURAÇÕES GERAIS*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.pageeditar {
+     background-color: rgb(106, 108, 233);
+    font-family: 'Orbitron', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container Principal da Página */
+.containereditar {
+    background-color: #1a1a2e; 
+    border: 3px solid #ffcc00;   
+    border-radius: 20px;
+    padding: 30px;
+    width: 100%;
+    max-width: 450px;            
+    text-align: center;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.tituloeditar {
+    font-family: 'Press Start 2P', system-ui; /* Fonte pixelada para o título */
+    font-size: 18px;
+    color: #ffcc00;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 0px #000;
+}
+
+/* ================= SECÇÃO DO AVATAR ATUAL ================= */
+.secao-avatar-atual {
+    margin-bottom: 25px;
+}
+
+.avatar-wrapper {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 15px auto;
+    background-color: #162447;
+    border: 3px solid #ffcc00;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+.avatar-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    image-rendering: pixelated; /* Mantém o sprite de 16-bits nítido e sem borrão */
+}
+
+/* ================= CAMPO DE TEXTO (NICKNAME) ================= */
+.secao-nick {
+    margin-bottom: 30px;
+}
+
+.secao-nick label {
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.secao-nick input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #2a5298;
+    border-radius: 8px;
+    background-color: #162447;
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.secao-nick input:focus {
+    border-color: #ffcc00; /* Borda brilha em amarelo quando clicas para digitar */
+}
+
+/* ================= GRELHA DE AVATARES (SHOWDOWN STYLE) ================= */
+.titulo-grade {
+    color: #fff;
+    font-size: 14px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+.grade-avatares {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 sprites por linha */
+    gap: 10px;
+    background-color: #162447;
+    padding: 15px;
+    border-radius: 12px;
+    max-height: 200px;
+    overflow-y: auto; /* Cria a barra de rolagem se tiveres muitos avatares */
+    margin-bottom: 30px;
+    border: 2px solid #2a5298;
+}
+
+.opcao-avatar {
+    width: 100%;
+    aspect-ratio: 1; /* Garante que o quadrado seja perfeito */
+    object-fit: contain;
+    image-rendering: pixelated;
+    cursor: pointer;
+    background-color: #1a1a2e;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    padding: 4px;
+    transition: all 0.2s ease;
+}
+
+/* Efeito Hover na seleção de sprites */
+.opcao-avatar:hover {
+    background-color: #2a5298;
+    border-color: #ffcc00;
+    transform: scale(1.1); /* Dá um leve zoom no sprite selecionado */
+}
+
+/* Estilização da barra de rolagem da grelha (Scrollbar) */
+.grade-avatares::-webkit-scrollbar {
+    width: 6px;
+}
+.grade-avatares::-webkit-scrollbar-thumb {
+    background-color: #ffcc00;
+    border-radius: 4px;
+}
+.grade-avatares::-webkit-scrollbar-track {
+    background-color: #162447;
+}
+
+/* ================= BOTÃO VOLTAR / SALVAR ================= */
+.botao-voltar {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #ffcc00, #ff9900); /* Degradê amarelo/laranja */
+    color: #000;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.botao-voltar:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.botao-voltar:active {
+    transform: translateY(1px);
+}

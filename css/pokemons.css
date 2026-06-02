@@ -1,0 +1,65 @@
+/* Container para alinhar as capas em grade flexível */
+.grade-geracoes {
+    display: flex;
+    flex-wrap: wrap;       /* Permite que os botões quebrem para a linha de baixo se faltar espaço */
+    justify-content: center;
+    gap: 25px;              /* Espaçamento entre uma capa e outra */
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* O link que envolve a imagem (o "card" em si) */
+.card-geracao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;  /* Remove sublinhados do texto descritivo */
+    background-color: #1a1a2e; /* Fundo escuro atrás da imagem, estilo Showdown */
+    border: 3px solid #ffcc00; /* Borda amarela padrão do seu projeto */
+    border-radius: 16px;
+    padding: 15px;
+    width: 200px;           /* Tamanho fixo para todas as capas ficarem simétricas */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+/* Configuração da imagem do jogo */
+.card-geracao img {
+    width: 100%;            /* Faz a imagem ocupar o tamanho máximo do card */
+    height: auto;
+    border-radius: 8px;     /* Arredonda levemente os cantos da própria imagem */
+    image-rendering: pixelated; 
+}
+
+/* Texto abaixo da imagem */
+.nome-geracao {
+    margin-top: 12px;
+    font-family: 'Orbitron', sans-serif;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.botao-voltar {
+    display: block;           
+    text-decoration: none;    
+    text-align: center;       
+    font-family: 'Orbitron', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #FFFFFF; /* Texto branco para destacar no fundo escuro */
+    text-transform: uppercase;  
+    width: 80%;                 
+    max-width: 300px;           
+    padding: 16px 20px;         
+    margin: 20px 0 40px 0; /* Margem superior e um espaço extra abaixo dele */
+    background: linear-gradient(135deg, #A44C4B, #333333); 
+    border: 2px solid #111111;              
+    border-radius: 12px;   
+    cursor: pointer;     
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+

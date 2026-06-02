@@ -1,0 +1,135 @@
+/* Container que organiza os cards dos Pokémons em várias colunas */
+.grade-pokemons {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Card individual do Pokémon - Padrão Unificado */
+.pokemon-card {
+    background-color: #1a1a2e; 
+    border: 3px solid #ffcc00;   
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.4);
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Iluminação na borda ao passar o mouse (Hover) */
+.pokemon-card:hover {
+    border-color: #ffffff; 
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Número do Pokémon (#252) */
+.pokemon-id {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 14px;
+    color: #ffcc00;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+/* Imagem do Sprite oficial */
+.pokemon-img {
+    width: 96px;
+    height: 96px;
+    object-fit: contain;
+    image-rendering: pixelated; 
+    margin: 0 auto 12px auto;
+}
+
+/* ================= ÍCONES DE TIPAGEM BALÃO ================= */
+.pokemon-tipos {
+    display: flex;
+    justify-content: center;
+    gap: 8px;               
+    margin-bottom: 10px;     
+}
+
+.tipo-icone {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;      
+    border-radius: 50%;     
+    font-family: 'Orbitron', sans-serif;
+    font-size: 9px;         
+    font-weight: bold;
+    color: #FFFFFF;         
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;       
+}
+
+/* Cores Oficiais dos Tipos */
+.normal   { background-color: #A8A77A; }
+.fire     { background-color: #EE8130; }
+.water    { background-color: #6390F0; }
+.electric { background-color: #F7D02C; }
+.grass    { background-color: #7AC74C; }
+.ice      { background-color: #96D9D6; }
+.fighting { background-color: #C22E28; }
+.poison   { background-color: #A33EA4; }
+.ground   { background-color: #E2BF65; }
+.flying   { background-color: #A98FF3; }
+.psychic  { background-color: #F95587; }
+.bug      { background-color: #A6B91A; }
+.rock     { background-color: #B6A136; }
+.ghost    { background-color: #705598; }
+.dragon   { background-color: #6F35FC; }
+.dark     { background-color: #705746; }
+.steel    { background-color: #B7B7CE; }
+.fairy    { background-color: #D685AD; }
+
+/* Nome do Pokémon */
+.pokemon-nome {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* Caixa de descrição da Pokédex */
+.pokemon-descricao {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 12px;
+    color: #cccccc;
+    background-color: #162447; 
+    padding: 10px;
+    border-radius: 8px;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Botão de voltar */
+.botao-voltar {
+    display: block;           
+    text-decoration: none;    
+    text-align: center;       
+    font-family: 'Orbitron', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #FFFFFF; 
+    text-transform: uppercase;  
+    width: 80%;                 
+    max-width: 300px;           
+    padding: 16px 20px;         
+    margin: 30px auto 50px auto; 
+    background: linear-gradient(135deg, #A44C4B, #333333); 
+    border: 2px solid #111111;              
+    border-radius: 12px;   
+    cursor: pointer;     
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}

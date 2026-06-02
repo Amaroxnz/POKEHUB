@@ -1,0 +1,120 @@
+/* BOTÃO VOLTAR  */
+.botao-voltar {
+    display: block;           
+    text-decoration: none;    
+    text-align: center;       
+    font-family: 'Orbitron', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #FFFFFF; /* Texto branco para destacar no fundo escuro */
+    text-transform: uppercase;  
+
+    width: 80%;                 
+    max-width: 300px;           
+    padding: 16px 20px;         
+    margin: 20px 0 40px 0; /* Margem superior e um espaço extra abaixo dele */
+
+    /* Degradê que remete a uma Pokebola moderna (Vermelho Escuro para Cinza Escuro) */
+    background: linear-gradient(135deg, #A44C4B, #333333); 
+    border: 2px solid #111111;              
+    border-radius: 12px;   
+    cursor: pointer;     
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* SEÇÃO DA TABELA DE TIPOS  */
+
+/* Centraliza o container da tabela e impede que estoure no celular */
+.table-wrapper {
+    width: 95%;
+    max-width: 1000px;
+    margin: 20px auto;
+    overflow-x: auto; /* Adiciona scroll horizontal se a tabela for maior que a tela */
+    background-color: #555555;
+    border: 2px solid #111111;
+    border-radius: 12px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.4);
+    padding: 10px;
+}
+
+/* Configurações básicas da tabela */
+.tabela-pokemon {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+}
+
+/* Células de dados normais (os multiplicadores) */
+.tabela-pokemon td {
+    background-color: #FFFFFF;
+    color: #000000;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 8px 4px;
+    border: 1px solid #e0e0e0;
+    min-width: 44px;
+}
+
+/* Cabeçalhos e nomes de tipos */
+.tabela-pokemon th {
+    padding: 6px 4px;
+    border: 1px solid #111111;
+}
+
+.diagonal-cell {
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.header-defending {
+    background-color: #4C4BA4;
+    color: #FFFFFF;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.header-attacking {
+    background-color: #A44C4B;
+    color: #FFFFFF;
+    font-size: 12px;
+    text-transform: uppercase;
+    writing-mode: vertical-lr; /* Mantém o texto em pé na lateral */
+    transform: rotate(180deg);
+    padding: 10px !important;
+}
+
+/* Formatação do texto dos tipos dentro das células */
+.tipo-txt {
+    color: #FFFFFF;
+    font-size: 11px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #000;
+}
+
+/* Cores de destaque para os multiplicadores (Igual ao Showdown) */
+.dmg-double {
+    background-color: #44aa44 !important; /* Verde */
+    color: #FFFFFF !important;
+}
+
+.dmg-half {
+    background-color: #cc3333 !important;  /* Vermelho */
+    color: #FFFFFF !important;
+}
+
+.dmg-zero {
+    background-color: #333333 !important;  /* Preto/Cinza Escuro */
+    color: #FFFFFF !important;
+}
+
+/* Rodapé da tabela */
+.tabela-footer {
+    background-color: #999999;
+    color: #FFFFFF;
+    padding: 8px;
+    font-size: 11px;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PokeHub - Time</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/time.css">
+</head>
+<body>
+
+  <h1 class="POKETITLE">Time</h1>
+  <p class="fonte">Escolha seu Time</p>
+
+  <div class="campo-batalha" id="campoBatalha"></div>
+
+  <div class="espaco-botoes">
+    <button class="botao-sair" onclick="window.location.href='lobby.html'">Voltar</button>
+    <button class="botao-salvar" id="btnSalvarTime">Salvar Time</button>
+  </div>
+
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal">
+
+      <div class="modal-cabecao">
+        <span class="modal-titulo">Escolha um Pokémon</span>
+        <button class="modal-fechar" id="btnFecharModal">&times;</button>
+      </div>
+
+      <div class="modal-search">
+        <input type="text" id="searchInput" placeholder="Digite o nome ou ID do Pokémon (Ex: Lucario)...">
+      </div>
+
+      <div class="pokemon-grid" id="pokemonGrid"></div>
+
+      <button id="loadMoreBtn" class="modal-loadmore" style="display: block; width: 90%; margin: 10px auto; padding: 12px; background: #3B4CCA; color: #fff; border: 2px solid #ffcc00; border-radius: 8px; font-family: 'Orbitron', sans-serif; font-weight: bold; cursor: pointer;">Carregar Mais Pokémon</button>
+
+    </div>
+  </div>
+
+  <div class="toast" id="toast" style="position: fixed; bottom: 20px; right: 20px; background: #4caf50; color: white; padding: 15px 25px; border-radius: 8px; font-family: 'Orbitron', sans-serif; display: none; z-index: 9999;">Time salvo com sucesso na Pokédex!</div>
+
+  <script src="js/time.js"></script>
+</body>
+</html>

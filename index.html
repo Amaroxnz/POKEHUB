@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login - pokehub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/login.css" href="css/estilo.css">
+</head>
+<body>
+
+<center>
+    <h1 class="titulo">POKEHUB</h1>
+    <p class="subtitulo">faça login para continuar</p>
+
+    <!-- caixa principal do formulario -->
+    <div class="caixa-login">
+
+        <!-- foto da pokebola so com css -->
+        <div class="pokebola-container">
+            <div class="pokebola">
+                <div class="pokebola-cima"></div>
+                <div class="pokebola-baixo"></div>
+                <div class="pokebola-faixa"></div>
+                <div class="pokebola-botao"></div>
+            </div>
+        </div>
+
+        <!-- formulario de login -->
+        
+       
+        <form action="lobby.html" method="get">
+
+            <p class="label-campo">E-mail ou Usuario:</p>
+            <input class="campo" type="text" name="usuario" placeholder="digite seu usuario ou email" required>
+            <br><br>
+
+            <p class="label-campo">Senha:</p>
+            <input class="campo" type="password" name="senha" placeholder="digite sua senha" required>
+            <br>
+
+            <!-- link esqueci a senha -->
+            <p class="esqueceu"><a href="#">esqueceu a senha?</a></p>
+            <br>
+
+            <input type="submit" class="botao-entrar" value="ENTRAR NA ARENA">
+
+        </form>
+
+        <br>
+        <hr class="linha">
+        <br>
+
+        <!-- link pra pagina de cadastro -->
+        <p class="texto-rodape">nao tem conta? <a href="cadastro.html" class="link-cadastro">cadastre-se aqui</a></p>
+
+    </div>
+</center>
+
+</body>
+</html>
